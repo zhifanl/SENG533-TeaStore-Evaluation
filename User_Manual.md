@@ -8,3 +8,5 @@ java -jar httploadgenerator.jar loadgenerator
 In the other:
 cd ./TeaStore/examples/httploadgenerator
 java -jar httploadgenerator.jar director -s 127.0.0.1  -a ./increasingLowIntensity.csv -l ./teastore_browse.lua -o loadGeneratingResult.csv -t 8
+
+After running the tests, shut down loadgenerator (the first process)
