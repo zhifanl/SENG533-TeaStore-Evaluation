@@ -9,6 +9,8 @@ logging.getLogger().setLevel(logging.INFO)
 
 class UserBehavior(HttpUser):
 
+    host = 'http://127.0.0.1:8080/tools.descartes.teastore.webui'
+
     @task
     def load(self) -> None:
         """
@@ -51,13 +53,13 @@ class UserBehavior(HttpUser):
         else:
             logging.error(f"Could not load login page: {res.status_code}")
         # login random user
-        user = randint(1, 99)
-        login_request = self.client.post("/loginAction", params={"username": user, "password": "password"})
+        user = "user2"
+        login_request = self.client.post("/loginAction", params={"username": "user2", "password": "password"})
         if login_request.ok:
             logging.info(f"Login with username: {user}")
         else:
             logging.error(
-                f"Could not login with username: {user} - status: {login_request.status_code}")
+                f"Could not login with username: {user} - status: {login_request}")
 
     def browse(self) -> None:
         """
