@@ -39,7 +39,7 @@ build & push & check on docker hub https://hub.docker.com/
 minikube start / minikube stop
 kubectl config view
 kubectl config current-context (either docker-desktop or minikube is fine here)
-kubectl create namespace teastore (we use teastore here)
+kubectl create namespace teastore (we use teastore here) / kubectl delete namespace teastore
 
 for deployment & starting the pods:
 kubectl apply -f teastore-new.yaml (I modified the file)
