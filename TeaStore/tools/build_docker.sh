@@ -32,7 +32,7 @@ then
 	perl -i -pe's|.*FROM '"${registry}"'|FROM descartesresearch/|g' ../services/tools.descartes.teastore.*/Dockerfile
 	docker buildx rm mybuilder
 else
-	registry='descartesresearch/'
+	registry='zhifanli/'
 	docker buildx build -t "${registry}teastore-db" ../utilities/tools.descartes.teastore.database/ --load
 	docker buildx build -t "${registry}teastore-kieker-rabbitmq" ../utilities/tools.descartes.teastore.kieker.rabbitmq/ --load
 	docker buildx build -t "${registry}teastore-base" ../utilities/tools.descartes.teastore.dockerbase/ --load
@@ -44,3 +44,12 @@ else
 	docker buildx build -t "${registry}teastore-recommender" ../services/tools.descartes.teastore.recommender/ --load
 fi
 
+docker push "${registry}teastore-db:latest"
+docker push "${registry}teastore-kieker-rabbitmq:latest"
+docker push "${registry}teastore-base:latest"
+docker push "${registry}teastore-registry:latest"
+docker push "${registry}teastore-persistence:latest"
+docker push "${registry}teastore-image:latest"
+docker push "${registry}teastore-webui:latest"
+docker push "${registry}teastore-auth:latest"
+docker push "${registry}teastore-recommender:latest"

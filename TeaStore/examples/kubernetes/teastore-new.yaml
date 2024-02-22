@@ -2,6 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: teastore
   name: teastore-db
   labels:
     app: teastore
@@ -19,7 +20,7 @@ spec:
     spec:
       containers:
         - name: teastore-db
-          image: descartesresearch/teastore-db
+          image: zhifanli/teastore-db
           ports:
             - containerPort: 3306
 ---
@@ -27,6 +28,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-db
+  namespace: teastore
+
   labels:
     app: teastore
     run: teastore-db
@@ -41,6 +44,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-registry
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-registry
@@ -57,7 +61,7 @@ spec:
     spec:
       containers:
         - name: teastore-registry
-          image: descartesresearch/teastore-registry
+          image: zhifanli/teastore-registry
           ports:
             - containerPort: 8080
 ---
@@ -65,6 +69,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-registry
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-registry
@@ -79,6 +84,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-persistence
+  namespace: teastore
+
   labels:
     app: teastore
     run: teastore-persistence
@@ -95,7 +102,7 @@ spec:
     spec:
       containers:
         - name: teastore-persistence
-          image: descartesresearch/teastore-persistence
+          image: zhifanli/teastore-persistence
           ports:
             - containerPort: 8080
           env:
@@ -112,6 +119,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-persistence
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-persistence
@@ -126,6 +134,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-auth
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-auth
@@ -142,7 +151,7 @@ spec:
     spec:
       containers:
         - name: teastore-auth
-          image: descartesresearch/teastore-auth
+          image: zhifanli/teastore-auth
           ports:
             - containerPort: 8080
           env:
@@ -155,6 +164,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-auth
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-auth
@@ -169,6 +179,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-image
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-image
@@ -185,7 +196,7 @@ spec:
     spec:
       containers:
         - name: teastore-image
-          image: descartesresearch/teastore-image
+          image: zhifanli/teastore-image
           ports:
             - containerPort: 8080
           env:
@@ -198,6 +209,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-image
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-image
@@ -212,6 +224,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-recommender
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-recommender
@@ -228,7 +241,7 @@ spec:
     spec:
       containers:
         - name: teastore-recommender
-          image: descartesresearch/teastore-recommender
+          image: zhifanli/teastore-recommender
           ports:
             - containerPort: 8080
           env:
@@ -241,6 +254,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-recommender
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-recommender
@@ -255,6 +269,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: teastore-webui
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-webui
@@ -271,7 +286,7 @@ spec:
     spec:
       containers:
         - name: teastore-webui
-          image: descartesresearch/teastore-webui
+          image: zhifanli/teastore-webui
           ports:
             - containerPort: 8080
           env:
@@ -284,6 +299,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: teastore-webui
+  namespace: teastore
   labels:
     app: teastore
     run: teastore-webui
@@ -291,7 +307,7 @@ spec:
   type: NodePort
   ports:
     - port: 8080
-      nodePort: 30080
+      nodePort: 30090
       protocol: TCP
   selector:
     run: teastore-webui
