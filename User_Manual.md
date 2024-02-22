@@ -49,6 +49,7 @@ kubectl get deployments -n teastore / kubectl delete deployment teastore-db -n t
 kubectl get services -n teastore / kubectl delete service teastore-db -n teastore
 kubectl get pods -n teastore / kubectl delete pods teastore-db -n teastore
 
+for scaling:
 kubectl scale deployment teastore-db --replicas=1 -n teastore
 
 for checking ip address of pods:
