@@ -1,0 +1,8 @@
+tools/descartes/teastore/kieker/rabbitmq/LogConsumer.class
+tools/descartes/teastore/kieker/rabbitmq/FileWriterDaemon.class
+tools/descartes/teastore/kieker/rabbitmq/DisplayLogs.class
+tools/descartes/teastore/kieker/rabbitmq/IndexServlet.class
+tools/descartes/teastore/kieker/rabbitmq/LogReaderStartup.class
+tools/descartes/teastore/kieker/rabbitmq/Reset.class
+tools/descartes/teastore/kieker/rabbitmq/MemoryLogStorage.class
+tools/descartes/teastore/kieker/rabbitmq/LogReaderDaemon.class

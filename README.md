@@ -88,7 +88,7 @@ kubectl get svc -n teastore
 ```
 
 
-## url of the ui:
+## URL of UI (TO BE TESTED):
 
 ```
 personal laptop: http://localhost:30090/tools.descartes.teastore.webui/
