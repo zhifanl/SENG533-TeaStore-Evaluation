@@ -1,0 +1,7 @@
+tools/descartes/teastore/recommender/algorithm/PopularityBasedRecommenderTest.class
+tools/descartes/teastore/recommender/algorithm/AbstractRecommenderFunctionalityTest.class
+tools/descartes/teastore/recommender/algorithm/OrderBasedRecommenderTest.class
+tools/descartes/teastore/recommender/algorithm/AbstractRecommenderTest.class
+tools/descartes/teastore/recommender/algorithm/DummyRecommenderTest.class
+tools/descartes/teastore/recommender/algorithm/PreprocessedSlopeOneRecommenderTest.class
+tools/descartes/teastore/recommender/algorithm/SlopeOneRecommenderTest.class

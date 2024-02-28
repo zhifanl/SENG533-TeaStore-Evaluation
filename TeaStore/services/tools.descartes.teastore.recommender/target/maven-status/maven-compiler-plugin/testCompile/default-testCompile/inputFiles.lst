@@ -1,0 +1,7 @@
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/AbstractRecommenderTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/AbstractRecommenderFunctionalityTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/DummyRecommenderTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/PreprocessedSlopeOneRecommenderTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/OrderBasedRecommenderTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/SlopeOneRecommenderTest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.recommender/src/test/java/tools/descartes/teastore/recommender/algorithm/PopularityBasedRecommenderTest.java

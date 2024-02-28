@@ -1,0 +1,11 @@
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/ISecurityProvider.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/rest/ReadyRest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/ShaSecurityProvider.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/rest/AuthCartRest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/rest/AuthUserActionsRest.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/ConstantKeyProvider.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/BCryptProvider.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/IKeyProvider.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/startup/AuthStartup.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/ISessionIdGenerator.java
+/Users/lizhifan/Desktop/TeaStore/services/tools.descartes.teastore.auth/src/main/java/tools/descartes/teastore/auth/security/RandomSessionIdGenerator.java

@@ -1,0 +1,6 @@
+tools/descartes/teastore/registry/rest/RegistryStartup.class
+tools/descartes/teastore/registry/rest/RegistryStartup$1.class
+tools/descartes/teastore/registry/rest/Registry.class
+tools/descartes/teastore/registry/servlet/IndexServlet.class
+tools/descartes/teastore/registry/rest/RegistryREST.class
+tools/descartes/teastore/registry/rest/HeartbeatInfo.class
