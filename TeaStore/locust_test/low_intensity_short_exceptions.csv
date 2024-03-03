@@ -1,9 +1,0 @@
-Count,Message,Traceback,Nodes
-<<<<<<< HEAD
-=======
-4280,No tasks defined on QuickstartUser. use the @task decorator or set the tasks property of the User (or mark it as abstract = True if you only intend to subclass it),"  File ""/home/ubuntu/.local/lib/python3.6/site-packages/locust/user/task.py"", line 314, in run
-    self.schedule_task(self.get_next_task())
-  File ""/home/ubuntu/.local/lib/python3.6/site-packages/locust/user/task.py"", line 447, in get_next_task
-    f""No tasks defined on {self.user.__class__.__name__}. use the @task decorator or set the tasks property of the User (or mark it as abstract = True if you only intend to subclass it)""
-",local
->>>>>>> ubuntu changes
