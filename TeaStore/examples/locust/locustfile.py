@@ -7,17 +7,18 @@ from locust import HttpUser, task
 logging.getLogger().setLevel(logging.INFO)
 
 
-class UserBehavior(HttpUser):
+class SimluateUser(HttpUser):
 
     host = 'http://127.0.0.1:8080/tools.descartes.teastore.webui'
-
+    
     @task
-    def load(self) -> None:
+    def userExecuteTasks(self) -> None:
         """
         Simulates user behaviour.
         :return: None
         """
         logging.info("Starting user.")
+        
         self.visit_home()
         self.login()
         self.browse()

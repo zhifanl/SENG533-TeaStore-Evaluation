@@ -124,6 +124,63 @@ java -jar httploadgenerator.jar director -s 10.1.11.211 -a ./increasingLowIntens
 
 After running the tests, shut down loadgenerator (the first process)
 
+## Locust Testing
+
+**- Short Duration Tests**
+
+- Low Intensity (10 RPS)
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 1m  -csv=low-intensity-short
+    ```
+
+- Medium Intensity (50 RPS)
+    ```
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 1m  -csv=medium-intensity-short
+    ```
+- High Intensity (100 RPS)
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 1m  -csv=high-intensity-short
+    ```
+- Extreme Intensity (300 RPS)
+    ``` 
+    locust -f locustfile.py --headless --users 300 --spawn-rate 300 --run-time 1m  -csv=extreme-intensity-short
+    ```
+
+
+**- Long Duration Tests**
+
+- Low Intensity (10 RPS)
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 5m  -csv=low-intensity-long
+    ```
+
+- Medium Intensity (50 RPS)
+    ```
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 5m  -csv=medium-intensity-long
+    ```
+- High Intensity (100 RPS)
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 5m  -csv=high-intensity-long
+    ```
+- Extreme Intensity (300 RPS)
+    ```
+    locust -f locustfile.py --headless --users 300 --spawn-rate 300 --run-time 5m  -csv=extreme-intensity-long
+    ```
+
+**- Spike Test**
+
+- Preparing for the Spike
+    ```
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 2m -csv=pre-spike
+    ```
+- Executing the Spike
+    ```
+    locust -f locustfile.py --headless --users 1000 --spawn-rate 1000 --run-time 2m -csv=spike
+    ```
+- Post-Spike Observation
+    ```
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 15m -csv=post-spike
+    ```
 
 
 ## Next steps:
