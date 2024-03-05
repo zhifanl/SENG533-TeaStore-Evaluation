@@ -179,7 +179,7 @@ After running the tests, shut down loadgenerator (the first process)
     ```
 - Post-Spike Observation
     ```
-    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 15m --csv=post-spike
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 2m --csv=post-spike
     ```
 
 
