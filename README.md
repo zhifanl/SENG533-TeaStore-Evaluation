@@ -129,42 +129,105 @@ After running the tests, shut down loadgenerator (the first process)
 **- Short Duration Tests**
 
 - Low Intensity (10 RPS)
+    - Normal Spawn Rate:
     ```
     locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 1m  --csv=low-intensity-short
     ```
+    - Low Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 1 --run-time 1m  --csv=low-intensity-short-low-spawn-rate
+    ```
+    - High Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 100 --run-time 1m  --csv=low-intensity-short-high-spawn-rate
+    ```
 
-- Medium Intensity (200 RPS)
+- Medium Intensity (50 RPS)
+    - Normal Spawn Rate:
     ```
-    locust -f locustfile.py --headless --users 200 --spawn-rate 200 --run-time 1m  --csv=medium-intensity-short
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 1m  --csv=medium-intensity-short
     ```
-- High Intensity (500 RPS)
+    - Low Spawn Rate:
     ```
-    locust -f locustfile.py --headless --users 500 --spawn-rate 500 --run-time 1m  --csv=high-intensity-short
+    locust -f locustfile.py --headless --users 50 --spawn-rate 5 --run-time 1m  --csv=medium-intensity-short-low-spawn-rate
     ```
-- Extreme Intensity (1000 RPS)
+    - High Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 50 --spawn-rate 500 --run-time 1m  --csv=medium-intensity-short-high-spawn-rate
+    ```
+- High Intensity (100 RPS)
+    - Normal Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 1m  --csv=high-intensity-short
+    ```
+    - Low Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 10 --run-time 1m  --csv=high-intensity-short-low-spawn-rate
+    ```
+    - High Spawn Rate:
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 1000 --run-time 1m  --csv=high-intensity-short-high-spawn-rate
+    ```
+- Extreme Intensity (300 RPS)
+    - Normal Spawn Rate:
     ``` 
-    locust -f locustfile.py --headless --users 1000 --spawn-rate 1000 --run-time 1m  --csv=extreme-intensity-short
+    locust -f locustfile.py --headless --users 300 --spawn-rate 300 --run-time 1m  --csv=extreme-intensity-short
+    ```
+    - Low Spawn Rate:
+    ``` 
+    locust -f locustfile.py --headless --users 300 --spawn-rate 30 --run-time 1m  --csv=extreme-intensity-short-low-spawn-rate
+    ```
+    - High Spawn Rate:
+    ``` 
+    locust -f locustfile.py --headless --users 300 --spawn-rate 3000 --run-time 1m  --csv=extreme-intensity-short-high-spawn-rate
     ```
 
 
 **- Long Duration Tests**
 
 - Low Intensity (10 RPS)
+    - 5mins: 
     ```
-    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 5m  --csv=low-intensity-long
+    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 5m  --csv=low-intensity-long-5mins
+    ```
+    - 30mins: 
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 30m  --csv=low-intensity-long-30mins
+    ```
+    - 60mins: 
+    ```
+    locust -f locustfile.py --headless --users 10 --spawn-rate 10 --run-time 60m  --csv=low-intensity-long-60mins
     ```
 
-- Medium Intensity (200 RPS)
+- Medium Intensity (50 RPS)
+    - 5mins: 
     ```
-    locust -f locustfile.py --headless --users 200 --spawn-rate 200 --run-time 5m  --csv=medium-intensity-long
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 5m  --csv=medium-intensity-long-5mins
     ```
-- High Intensity (500 RPS)
+    - 30mins: 
     ```
-    locust -f locustfile.py --headless --users 500 --spawn-rate 500 --run-time 5m  --csv=high-intensity-long
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 30m  --csv=medium-intensity-long-30mins
     ```
-- Extreme Intensity (1000 RPS)
+    - 60mins: 
     ```
-    locust -f locustfile.py --headless --users 1000 --spawn-rate 1000 --run-time 5m  --csv=extreme-intensity-long
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 60m  --csv=medium-intensity-long-60mins
+    ```
+- High Intensity (100 RPS)
+    - 5mins: 
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 5m  --csv=high-intensity-long-5mins
+    ```
+    - 30mins: 
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 30m  --csv=high-intensity-long-30mins
+    ```
+    - 60mins: 
+    ```
+    locust -f locustfile.py --headless --users 100 --spawn-rate 100 --run-time 60m  --csv=high-intensity-long-60mins
+    ```
+- Extreme Intensity (300 RPS)
+    ```
+    locust -f locustfile.py --headless --users 300 --spawn-rate 300 --run-time 5m  --csv=extreme-intensity-long
     ```
 
 **- Spike Test**
@@ -175,11 +238,11 @@ After running the tests, shut down loadgenerator (the first process)
     ```
 - Executing the Spike
     ```
-    locust -f locustfile.py --headless --users 5000 --spawn-rate 5000 --run-time 2m --csv=spike
+    locust -f locustfile.py --headless --users 1000 --spawn-rate 1000 --run-time 2m --csv=spike
     ```
 - Post-Spike Observation
     ```
-    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 2m --csv=post-spike
+    locust -f locustfile.py --headless --users 50 --spawn-rate 50 --run-time 15m --csv=post-spike
     ```
 
 
