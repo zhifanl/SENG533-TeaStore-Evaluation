@@ -1,0 +1,7 @@
+Method,Name,Error,Occurrences
+POST,/tools.descartes.teastore.webui/loginAction?logout=,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/,1
+POST,/tools.descartes.teastore.webui/cartAction?addToCart=&productid=474,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/cart,1
+GET,/tools.descartes.teastore.webui/product?id=117,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/product?id=117,1
+GET,/tools.descartes.teastore.webui/,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/,2
+GET,/tools.descartes.teastore.webui/profile,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/profile,1
+GET,/tools.descartes.teastore.webui/category?page=3&category=6,500 Server Error:  for url: http://127.0.0.1:8080/tools.descartes.teastore.webui/category?page=3&category=6,1
