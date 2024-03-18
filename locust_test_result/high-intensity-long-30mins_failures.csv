@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+GET,/tools.descartes.teastore.webui/product,Remote end closed connection without response,1
+GET,/tools.descartes.teastore.webui/,Remote end closed connection without response,2
+GET,/tools.descartes.teastore.webui/category,Remote end closed connection without response,3
+GET,/tools.descartes.teastore.webui/login,Remote end closed connection without response,2
+POST,/tools.descartes.teastore.webui/cartAction,Remote end closed connection without response,7
+GET,/tools.descartes.teastore.webui/profile,Remote end closed connection without response,2
+POST,/tools.descartes.teastore.webui/loginAction,Remote end closed connection without response,4
