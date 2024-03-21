@@ -1,0 +1,66 @@
+<mxfile host="65bd71144e">
+    <diagram id="hmBXABaVY76BW8StT99U" name="Page-1">
+        <mxGraphModel dx="706" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="171.53" y="68" width="333" height="333" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140.00367404095792" y="229.2134511963593" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="locust" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="5" y="180" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="App on RAC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="292.53" y="29" width="85" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="TeaStore UI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="180.53" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="TeaStore DB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="333.53" y="87" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="TeaStore Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="337.53" y="276" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="602.53" y="99" width="120" height="265" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="607.53" y="109" width="110" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="607.53" y="167" width="110" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="607.53" y="225" width="110" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="648.53" y="277" width="28" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="610.53" y="307" width="105" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Kubernetes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="629.53" y="55" width="79" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
